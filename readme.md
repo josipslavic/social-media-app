@@ -9,3 +9,4 @@ The backend was created with the use of [NestJS](https://nestjs.com/) and has th
 - Has unit testing and database integration testing (only for the postgres implementation of [AuthService](https://github.com/josipslavic/social-media-app/blob/main/backend/src/pg/auth/auth.service.spec.ts) and [UserService](https://github.com/josipslavic/social-media-app/blob/main/backend/src/pg/user/user.service.spec.ts), since this is a portfolio project that's only supposed to display unit testing knowledge further testing would be unnecessary) along with mock classes of common NestJS classes
 - Real time communication with frontend with the help of WebSockets (socket.io) which is located in the [events](https://github.com/josipslavic/social-media-app/blob/main/backend/src/pg/events) folder.
 - Authentication with a reset password feature which sends a reset token to the user's email address and protected api routes
+- Usage of AWS S3 to store images
