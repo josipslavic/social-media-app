@@ -1,0 +1,17 @@
+version: '3'
+services:
+  postgres:
+    container_name: social_media_app_pg
+    image: postgres:latest
+    restart: always
+    ports:
+      - '5432:5432'
+    env_file:
+      - docker.env
+  mongo:
+    container_name: social_media_app_mongo
+    image: mongo:latest
+    env_file:
+      - docker.env
+    ports:
+      - '27017:27017'
